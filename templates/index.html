@@ -23,7 +23,7 @@
 					<header class="meta">
 						<h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
 						<ul>
-							<li>By {% for author in article.authors %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif%}{% endfor %}</li>
+							<li>Написано {% for author in article.authors %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif%}{% endfor %}</li>
 							<li>{{ article.locale_date }}</li>
 							<li><a href="{{ SITEURL }}/category/{{ article.category }}">{{ article.category }}</a></li>
 						</ul>
@@ -35,7 +35,7 @@
 							{{ article.summary|truncate(280) }}
 						{% endif %}
 	        		</p>
-					<a href="{{ SITEURL }}/{{ article.url }}" class="button color">Read More</a>
+					<a href="{{ SITEURL }}/{{ article.url }}" class="button color">Читать дальше</a>
 				</section>
 			</div>
 			<div class="clearfix"></div>
@@ -48,10 +48,10 @@
 		<ul>
 			<li>
 			    {% if articles_page.has_previous() %}
-			        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">Newest Posts &rarr;</a>
+			        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">Новые записи &rarr;</a>
 			    {% endif %}
 			    {% if articles_page.has_next() %}
-			        <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Older Posts &rarr;</a>
+			        <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Старые записи &rarr;</a>
 			    {% endif %}
 			</li>
 			<!-- Page {{ articles_page.number }} / {{ articles_paginator.num_pages }} -->

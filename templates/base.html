@@ -95,7 +95,7 @@
 					<nav id="navigation" class="menu">
 						<ul id="responsive">
 
-							<li><a href="{{ SITEURL }}/">Home</a></li>
+							<li><a href="{{ SITEURL }}/">Главная</a></li>
 
 							{% for title, link in MENUITEMS %}
 							    <li><a href="{{ link }}">{{ title }}</a></li>
@@ -125,8 +125,8 @@
 					<div class="sixteen columns">						
 						<nav id="breadcrumbs">
 							<ul>
-								<li>You are here:</li>
-								<li><a href="{{ SITEURL }}/">Home</a></li>
+								<li>Текущее нахождение:</li>
+								<li><a href="{{ SITEURL }}/">Главная</a></li>
 								{% block page_breadcrumbs %}{% endblock page_breadcrumbs %}
 							</ul>
 						</nav>
